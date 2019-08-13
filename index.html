@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel ="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+    <div class="wrapper">
+   <header>
+    <ul>
+        <li>このサイトについて</li>
+        <li>私について</li>
+        <li>興味のあるもの、スキル</li>
+        <li>contact</li>
+    </ul>
+   </header>
+   <div class="container">
+       <h3>このサイトについて</h3>
+       <p>企業の皆様に向けての私の逆求人サイトです。
+           <br>
+           興味を持たれた方はぜひ、一番下のcontactからよろしくお願いします。
+       </p>
+           <h3>私について</h3>
+            <p>武庫川女子大学文学部日本文学科四回生の秋吉七海です。
+                <br>
+                未来電子テクノロジーという会社でインターンをしています。
+                <br>
+                猫を六匹飼っています。お酒と読書が好きです。
+            </p>
+           <h3>興味のあるもの、スキル</h3>
+           <p>プログラミング、マーケティングに興味があります。
+            <br>
+            未来電子でのマーケティングはライティングの実務を行っています。
+               <br>
+               日本文化と日本文学が好きです。
+               <br>
+               大学では博物館学芸員資格を取得予定です。
+               <br>
+               <a class="twitter-timeline" data-width="400" data-height="320" data-theme="dark" href="https://twitter.com/Akiyoshi_mirai?ref_src=twsrc%5Etfw">Tweets by Akiyoshi_mirai</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+           <br>
+            </p>
+
+     <div class="slide">
+    <img id="mypic" src="mypic/pic1.jpg" width="400" height="300">
+
+        <script>
+            document.write('<img src')
+        var pics_src = new Array("mypic/pic1.jpg","mypic/pic2.jpg","mypic/pic3.jpg");
+        var num = -1;
+
+        slideshow_timer();
+
+        function slideshow_timer(){
+            if (num == 2){
+                num = 0;
+            }
+            else {
+                num ++;
+            }
+            document.getElementById("mypic").src=pics_src[num];
+            setTimeout("slideshow_timer()",1000);
+        }
+        </script>
+        </div>
+        <br>
+        <p>上はjavascriptで作成したスライドショーです。</p>
+        <div class="contact-form">
+            <h3 class="section-title">contact</h3>
+            <p>お名前（必須）</p>
+            <input>
+            <p>メールアドレス（必須）</p>
+                <input>
+                <p>お問い合わせ内容（必須）</p>
+                <textarea></textarea>
+                <p>※お問い合わせ内容は必ずご入力ください</p>
+                <input class="submit" type="submit" value="送信">
+        </div>
+        </div>
+    </div>
+        <footer></footer>
+</body>
+</html>
